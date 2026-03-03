@@ -130,8 +130,8 @@ h1, h2, h3, p {
 }
 
 .staff-member img {
-  width: 150px;
-  height: 150px;
+  width: 120px; /* Reduced size */
+  height: 120px; /* Reduced size */
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid #9c59b6;
@@ -170,4 +170,4 @@ h1, h2, h3, p {
 
 .mode-toggle:hover {
   color: #9c59b6;
-  }
+    }
