@@ -17,9 +17,43 @@ h1, h2, h3 {
   animation: fadeIn 1s ease-in-out;
 }
 
+nav {
+    z-index: 999;
+    position: sticky;
+    top: 10px;
+    border: 2px transparent;
+    transition: 0.2s ease-in-out;
+}
+
+.navContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navElements {
+    text-align: right;
+    left: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding-right: 20px;
+    padding-top: 10px;
+}
+
+nav p {
+    margin: 0;
+    padding: 0;
+}
+nav h1 {
+    margin: 4px;
+}
+
 a {
   color: inherit;
   text-decoration: none;
+  margin: 4px;
+  cursor: pointer;
 }
 
 /* Light Mode Styles */
