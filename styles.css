@@ -4,7 +4,8 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, #9c59b6, #6a2c8a); /* Continuous gradient from purple to dark purple */
+  /* background: linear-gradient(135deg, #9c59b6, #6a2c8a); Continuous gradient from purple to dark purple */ 
+  background: linear-gradient(135deg, #6a2c8a, #000000); /* Continuous gradient from purple to dark purple */
   color: #ffffff; /* White text color for contrast */
   display: flex;
   flex-direction: column;
@@ -56,63 +57,13 @@ a {
   cursor: pointer;
 }
 
-/* Light Mode Styles */
-.light-mode {
-  background: linear-gradient(135deg, #9c59b6, #6a2c8a); /* Continuous gradient for light mode */
-  color: #333333; /* Darker text color for light mode for better contrast */
-}
-
-.light-mode header {
-  background-color: rgba(156, 89, 182, 0.8); /* Semi-transparent header */
-  color: white;
-}
-
-.light-mode .cta-button {
-  background-color: #9c59b6;
-  color: white;
-}
-
-.light-mode .faq-list li {
-  border-bottom: 1px solid #eee;
-}
-
-.light-mode .staff-member {
-  background-color: rgba(244, 244, 244, 0.9); /* Semi-transparent background for staff members */
-  color: #333; /* Dark text for light mode */
-}
-
-.light-mode .staff-photo {
-  border: 3px solid #9c59b6;
-}
-
-/* Dark Mode Styles */
-.dark-mode {
-  background: linear-gradient(135deg, #6a2c8a, #000000); /* Continuous gradient for dark mode */
-  color: #f9f9f9; /* Light text color for dark mode for contrast */
-}
-
-.dark-mode header {
-  background-color: rgba(106, 44, 138, 0.8); /* Semi-transparent header */
-  color: white;
-}
-
-.dark-mode .cta-button {
-  background-color: #6a2c8a;
-  color: white;
-}
-
-.dark-mode .faq-list li {
-  border-bottom: 1px solid #444;
-}
-
-.dark-mode .staff-member {
-  background-color: rgba(68, 68, 68, 0.9); /* Semi-transparent background for staff members */
-  color: #f9f9f9; /* Light text for dark mode */
-}
-
-.dark-mode .staff-photo {
-  border: 3px solid #6a2c8a;
-}
+/* 
+  * light and dark mode toggles have been removed for now
+  * because they were causing too many issues.
+  * i will revamp the system later when i have time and readd them
+  * for now, the site will be fixed dark mode
+  * sorry :(
+*/
 
 /* Animations */
 h1, h2, h3, p {
@@ -163,7 +114,7 @@ h1, h2, h3, p {
   width: 200px;
   text-align: center;
   animation: slideIn 1s ease-out;
-  background-color: #f4f4f4;
+  background: linear-gradient(135deg, #9c53c0, #311e3a); /* this looks ugly as shit but idc rn */
   padding: 15px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -185,7 +136,7 @@ h1, h2, h3, p {
 
 .staff-member p {
   font-size: 1rem;
-  color: #666; /* Darker text color for paragraphs in light mode */
+  color: #e8e8e8; /* Darker text color for paragraphs in light mode */
 }
 
 /* Fun Fact Style */
@@ -194,7 +145,7 @@ h1, h2, h3, p {
   color: #9c59b6;
 }
 
-/* Mode Toggle Button */
+/* Mode Toggle Button
 .mode-toggle {
   position: fixed;
   top: 20px;
@@ -207,6 +158,7 @@ h1, h2, h3, p {
   z-index: 1000;
   transition: color 0.3s ease-in-out;
 }
+ */
 
 .mode-toggle:hover {
   color: #9c59b6;
