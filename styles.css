@@ -93,6 +93,9 @@ h1, h2, h3, p {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 
 }
 
@@ -172,3 +175,4 @@ h1, h2, h3, p {
 .mode-toggle:hover {
   color: #9c59b6;
 }
+
