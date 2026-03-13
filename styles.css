@@ -176,3 +176,15 @@ h1, h2, h3, p {
   color: #9c59b6;
 }
 
+.socialMediaContainer {
+  img {
+    width: auto;
+    height: auto;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+    object-fit: unset;
+  }
+}
